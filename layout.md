@@ -6,4 +6,3 @@ o7v5cmfl3dg.tex
 puekkajc85o.tex
 8lrspa7cspg.html
 fvpo2fauh28.tex
-92s73ciivko.html
