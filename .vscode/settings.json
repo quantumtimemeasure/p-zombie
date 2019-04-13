@@ -1,3 +1,4 @@
 {
     "latex-workshop.chktex.enabled": false,
+    "files.eol": "\n",
 }
