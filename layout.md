@@ -11,3 +11,4 @@
 3210_MaterialPoint.tex
 3220_Temperature.tex
 3230_SecondLawOfThermodynamics.tex
+3240_FluidDynamics.tex
