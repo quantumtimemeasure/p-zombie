@@ -1,4 +1,4 @@
-1000_Introduction.html
+1000_Introduction.tex
 2000_Epiphenomenalism.tex
 2100_PhilosophicalZombie.html
 2200_EpiphenomenalismFormulation.tex
