@@ -1,6 +1,6 @@
 1000_Introduction.tex
 2000_Epiphenomenalism.tex
-2100_PhilosophicalZombie.html
+2100_PhilosophicalZombie.tex
 2200_EpiphenomenalismFormulation.tex
 2220_o7v5cmfl3dg.tex
 2230_puekkajc85o.tex
