@@ -1,2 +1,12 @@
 \subsubsection{流体力学}
-　質点の動学と温度について説明を行ったので、次に連続体の流体力学の説明を行う。記載を簡便にするために、温度についての記載は省略することにする。
+質点の動学と温度について説明を行ったので、次に連続体の流体力学の説明を行う。記載を簡便にするために、温度についての記載は省略することにする。新解釈では、時刻$t$における連続流体の状態（古典世界の状態）は、ある時間の推移とともに変化する宇宙の分割$\{V(t)_p\}$があって、
+\begin{equation}
+    \label{eq:classical fluid state}
+    \bigotimes_p \ket{\rho_p(t)} \in \bigotimes_p \mathcal{H}_p^a
+\end{equation}
+とかけるとする。ここで、$\rho_p(t)$はボリューム$V(t)_p$の密度である（量子力学における密度行列、密度演算子ではなく、古典流体力学における密度である）。新解釈では、$\mathcal{H}^i$との相互作用を無視すると、マクロ・古典的な物理量の固有状態は、時間が進んでも古典・マクロ的な物理量の固有状態であり続けるとしている（そのように$\mathcal{H}^i$を定義する）。従って、時刻$0$に密度について重ね合わせの状態でない\eqref{eq:classical fluid state}で記載できた状態は、時刻$t \neq 0$においても、\eqref{eq:classical fluid state}と記述でき、
+\begin{equation}
+   \int \cdots \int \prod_p \mathrm{d}\rho_p f(\{\rho_p\}) \bigotimes_p \ket{\rho_p} \in \bigotimes_p \mathcal{H}_p^a
+\end{equation}
+と重ね合わせの状態で記載する必要はない。\\
+　ボリューム$V(t)_p$の移動速度を$\bm{v}_p$とすると、
