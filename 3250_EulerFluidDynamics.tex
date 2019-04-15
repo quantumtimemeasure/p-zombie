@@ -1,10 +1,10 @@
 \subsubsection{オイラー表現での流体力学}
-質点の動学と温度について説明を行ったので、次に連続体の流体力学の説明を行う。記載を簡便にするために、温度についての記載は省略することにする。新解釈では、時刻$t$における連続流体の状態（古典世界の状態）は、ある時間の推移とともに変化する宇宙の分割$\{V(t)_p\}$があって、
+Euler表現の場合には、時刻によらない宇宙の分割$\{V_p\}$を用いて、
 \begin{equation}
-    \label{eq:classical_fluid_state}
-    \bigotimes_p \ket{\rho_p(t),\pi_p(t)} \in \bigotimes_p \mathcal{H}_p^a
+    \label{eq:euler_classical_fluid_state}
+    \bigotimes_p \ket{\rho_p(t),\pi_p(t)},\bm{v}_p(t) \in \bigotimes_p \mathcal{H}_p^a
 \end{equation}
-とかけるとする。ボリューム間での物質の流出入はないものとする。ここで、$\rho_p(t)$はボリューム$V(t)_p$の密度（量子力学における密度行列、密度演算子ではなく、古典流体力学における密度である）、$\pi_p(t)$はボリューム$V(t)_p$の圧力である。
+とかけるとする。ボリューム間での物質の流出入が発生する。ここで、$\rho_p(t)$はボリューム$V(t)_p$の密度（量子力学における密度行列、密度演算子ではなく、古典流体力学における密度である）、$\pi_p(t)$はボリューム$V(t)_p$の圧力である。$\bm{v}_p(t)$は群速度である。
 当然ながら、
 \begin{equation}
     \label{eq:quantum_fluid_state_dynamics}
