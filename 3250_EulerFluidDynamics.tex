@@ -2,26 +2,22 @@
 Euler表現の場合には、時刻によらない宇宙の分割$\{V_p\}$を用いて、
 \begin{equation}
     \label{eq:euler_classical_fluid_state}
-    \bigotimes_p \ket{\rho_p(t),\pi_p(t)},\bm{v}_p(t) \in \bigotimes_p \mathcal{H}_p^a
+    \bigotimes_p \ket{\rho_p(t),P(t)},\bm{V}_p(t) \in \bigotimes_p \mathcal{H}_p^a
 \end{equation}
-とかけるとする。ボリューム間での物質の流出入が発生する。ここで、$\rho_p(t)$はボリューム$V(t)_p$の密度（量子力学における密度行列、密度演算子ではなく、古典流体力学における密度である）、$\pi_p(t)$はボリューム$V(t)_p$の圧力である。$\bm{v}_p(t)$は群速度である。
+とかけるとする。ボリューム間での物質の流出入が発生する。ここで、$\rho_p(t)$はボリューム$V(t)_p$の密度（量子力学における密度行列、密度演算子ではなく、古典流体力学における密度である）、$P_p(t)$はボリューム$V(t)_p$の圧力である。$\bm{V}_p(t)$は群速度である。
 当然ながら、
 \begin{equation}
-    \label{eq:quantum_fluid_state_dynamics}
-    \bigotimes_p \ket{\rho_p(t),\pi_p(t)} = e^{-iHt}\bigotimes_p \ket{\rho_p(0),\pi_p(0)}
+    \label{eq:quantum_euler_fluid_state_dynamics}
+    \bigotimes_p \ket{\rho_p(t),P_p(t),\bm{V}_p(t)} = e^{-iHt}\bigotimes_p \ket{\rho_p(0),P_p(0),\bm{V}_p(0)}
 \end{equation}
 である。\\
-　新解釈では、$\mathcal{H}^i$との相互作用を無視すると、マクロ・古典的な物理量の固有状態は、時間が進んでも古典・マクロ的な物理量の固有状態であり続けるとしている（そのように$\mathcal{H}^i$を定義する）。従って、時刻$0$に密度、圧力について重ね合わせの状態でない（かつ異なるボリューム間でエンタングルしていない）\eqref{eq:classical_fluid_state}で記載できた状態は、時刻$t \neq 0$においても、\eqref{eq:classical_fluid_state}の形で記述でき、
+　新解釈では、$\mathcal{H}^i$との相互作用を無視すると、マクロ・古典的な物理量の固有状態は、時間が進んでも古典・マクロ的な物理量の固有状態であり続けるとしている（そのように$\mathcal{H}^i$を定義する）。従って、時刻$0$に密度、圧力、群速度について重ね合わせの状態でない（かつ異なるボリューム間でエンタングルしていない）\eqref{eq:euler_classical_fluid_state}で記載できた状態は、時刻$t \neq 0$においても、\eqref{eq:euler_classical_fluid_state}の形で記述でき、
 \begin{equation}
-    \label{eq:fluid_state_superposition}
-   \int \cdots \int \prod_p \mathrm{d}\rho_p \; \varphi(\{\rho_p\}) \bigotimes_p \ket{\rho_p} \in \bigotimes_p \mathcal{H}_p^a
+   \int \cdots \int \prod_p \mathrm{d}\rho_p
+   \int \cdots \int \prod_p \mathrm{d}V_x \int \cdots \int \prod_p \mathrm{d}V_y \int \cdots \int \prod_p \mathrm{d}V_z \; \varphi(\{\rho_p\},\{V_p_x\},\{V_p_y\},\{V_p_z\}) \bigotimes_p \ket{\rho_p} \in \bigotimes_p \mathcal{H}_p^a
 \end{equation}
-と重ね合わせの状態（異なるボリューム間でエンタングルしていない状態）として記載する必要がある状態になることはないと考える（ただし、記載を簡略にするため、密度のみ記載し圧力は省略した）。ちなみに、\eqref{eq:classical_fluid_state}は、\eqref{eq:fluid_state_superposition}において、
-\begin{equation}
-   \varphi(\{\rho_p\}) = \prod_p \delta(\rho_p(t))
-\end{equation}
-とした状態である。\\
-　密度$\rho_p$及び圧力$\pi_p$の重ね合わせにならなければ、ボリューム$V(t)_p$については、その体積を十分に小さくした場合には、Lagrange的立場から流体力学の基礎方程式を導出する際の微小体積要素と同じ考えであるから、ボリューム$V(t)_p$の移動速度$\bm{v}_p$、$\nabla \cdot \bm{v}_p$等も計算することができ、\eqref{eq:quantum_fluid_state_dynamics}は、流体力学における運動方程式、すなわち、オイラー方程式、ナビエ–ストークス方程式等と一致すると新解釈では想定する（場の量子論QEDを解析的に解くことができれば、新解釈のこの想定が正しいかどうか確認することができるが、解析的に解くことはできていないため、新解釈ではそうなることを仮定する。科学的に正しいことを現時点で示すことはできないが、コペンハーゲン解釈における波束の収束よりは私にとって気持ち悪くないため、これを仮説として設定するのは波束の収束より妥当と私は感じる）。\\
+と重ね合わせの状態（異なるボリューム間でエンタングルしている状態）として記載する必要がある状態になることはないと考える（ただし、記載を簡略にするため、圧力は省略した）。\\
+　密度$\rho_p$圧力$\pi_p$、及び群速度$\bm{V}_p(t)$の重ね合わせにならなければ、ボリューム$V(t)_p$については、その体積を十分に小さくした場合には、Euler的立場から流体力学の基礎方程式を導出する際の微小体積要素と同じ考えであるから、\eqref{eq:euler_quantum_fluid_state_dynamics}は、流体力学における運動方程式、すなわち、オイラー方程式、ナビエ–ストークス方程式等と一致すると新解釈では想定する（場の量子論QEDを解析的に解くことができれば、新解釈のこの想定が正しいかどうか確認することができるが、解析的に解くことはできていないため、新解釈ではそうなることを仮定する。科学的に正しいことを現時点で示すことはできないが、コペンハーゲン解釈における波束の収束よりは私にとって気持ち悪くないため、これを仮説として設定するのは波束の収束より妥当と私は感じる）。\\
 　例えば、最も単純な体積力を除いたオイラー方程式の場合、
 \begin{equation}
     \frac{D{\bm{v}_p}}{Dt} = -\frac{1}{\rho_p } \mathrm{grad}\, \pi_p
