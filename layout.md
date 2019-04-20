@@ -13,4 +13,4 @@
 3230_SecondLawOfThermodynamics.tex
 3240_FluidDynamics.tex
 3250_EulerFluidDynamics.tex
-cjit967t5d8.html
+3260_ElectricCurrent.tex
