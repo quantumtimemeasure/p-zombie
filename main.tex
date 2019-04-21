@@ -1,7 +1,12 @@
 \documentclass{article}
-\usepackage{amsmath}
+\usepackage{xeCJK}
+\setCJKmainfont{AozoraMinchoRegular.ttf}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
 \usepackage{bm}
 \usepackage{braket}
+\usepackage{biblatex}
+\usepackage{url}
+\addbibresource{bibliography/biblio.bib}
 \begin{document}
     \input{1000_Introduction.tex}
     \input{2000_Epiphenomenalism.tex}
@@ -19,4 +24,5 @@
     \input{3240_FluidDynamics.tex}
     \input{3250_EulerFluidDynamics.tex}
     \input{3250_EulerFluidDynamics.tex}
+    \printbibliography
 \end{document}
