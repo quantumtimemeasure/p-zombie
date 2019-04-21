@@ -14,3 +14,4 @@
 3240_FluidDynamics.tex
 3250_EulerFluidDynamics.tex
 3260_ElectricCurrent.tex
+4000_Superposition.tex
