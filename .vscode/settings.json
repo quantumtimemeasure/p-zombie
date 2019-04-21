@@ -45,7 +45,41 @@
   // "tab" オプションを指定すると、今開いているエディタを左右に分割し、右側に生成されたPDFを表示するようにしてくれる
   // この PDF ビュアーは LaTeX のビルドによって更新されると同期して内容を更新してくれる。
   "latex-workshop.view.pdf.viewer": "tab",
+  // latex-workshop.latex.clean.fileTypes: クリーンアップ時に削除されるファイルの拡張子
+  // LaTeX 文書はビルド時に一時ファイルとしていくつかのファイルを生成するが、最終的に必要となるのは
+  // PDF ファイルのみである場合などが多い。また、LaTeX のビルド時に失敗した場合、失敗時に生成された
+  // 一時ファイルの影響で、修正後のビルドに失敗してしまう事がよくある。そのため、一時的なファイルを
+  // 削除する機能 (クリーンアップ) が LaTeX Workshop には備わっている。
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.synctex.gz",
+    // for Beamer files
+    "_minted*",
+    "*.nav",
+    "*.snm",
+    "*.vrb",
+    // for biber
+    "*.bcf",
+  ],
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.latex.autoClean.run": "onBuilt",
-  "latex-workshop.view.pdf.ref.viewer":"tabOrBrowser",
+  "latex-workshop.view.pdf.ref.viewer": "tabOrBrowser",
 }
