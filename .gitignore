@@ -1,2 +1,5 @@
 *.pdf
 *.synctex.gz
+*.bcf
+*.xdv
+*.run.xml
