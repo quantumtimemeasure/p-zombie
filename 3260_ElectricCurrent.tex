@@ -1,13 +1,19 @@
 \subsubsection{電流と電荷}
-電流、電荷については、Euler表現の場合には、時刻によらない宇宙の分割$\{V_p\}$を用いて、
+電流、電荷については、電流が流れる導体そのものは動いていない場合で、電流についてEuler表現の場合には、時刻によらない宇宙の分割$\{V_p\}$を用いて、
 \begin{equation}
     \label{eq:electric_current_state}
-    \bigotimes_p \ket{\rho_p(t),\bm{J}_p(t)} \in \bigotimes_p \mathcal{H}_p^a
+    \bigotimes_p \ket{\rho^e_p(t),\bm{J}_p(t)} \in \bigotimes_p \mathcal{H}_p^a
 \end{equation}
-とかけるとする。ボリューム間での物質の流出入が発生する。ここで、$\rho_p(t)$はボリューム$V(t)_p$の電荷密度、$\bm{J}_p(t)$はボリューム$V(t)_p$の電流密度である。
+とかけるとする。ボリューム間での電荷の流出入が発生する。ここで、$\rho^e_p(t)$はボリューム$V(t)_p$の電荷密度、$\bm{J}_p(t)$はボリューム$V(t)_p$の電流密度である。
 当然ながら、
 \begin{equation}
-    \bigotimes_p \ket{\rho_p(t),\bm{J}_p(t)} = e^{-iHt}\bigotimes_p \ket{\rho_p(0),\bm{J}_p(0)}
+    \bigotimes_p \ket{\rho^e_p(t),\bm{J}_p(t)} = e^{-iHt}\bigotimes_p \ket{\rho_p^e(0),\bm{J}_p(0)}
 \end{equation}
 である。\par
-新解釈では、$\mathcal{H}^i$との相互作用を無視すると、マクロ・古典的な物理量の固有状態は、時間が進んでも古典・マクロ的な物理量の固有状態であり続けるとしている（そのように$\mathcal{H}^t$と$\mathcal{H}^i$を定義する）。従って、時刻$0$に電荷密度、電流密度について重ね合わせの状態でない（かつ異なるボリューム間でエンタングルしていない）状態は、時刻$t \neq 0$においても重なり合わせのない状態であり続けると考える。そのダイナミクスは、古典的な電磁気学に一致する。
+新解釈では、$\mathcal{H}^i$との相互作用を無視すると、マクロ・古典的な物理量の固有状態は、時間が進んでも古典・マクロ的な物理量の固有状態であり続けるとしている（そのように$\mathcal{H}^t$と$\mathcal{H}^i$を定義する）。従って、時刻$0$に電荷密度、電流密度について重ね合わせの状態でない（かつ異なるボリューム間でエンタングルしていない）状態は、時刻$t \neq 0$においても重なり合わせのない状態であり続けると考える。そのダイナミクスは、古典的な電磁気学に一致する。\par
+電流が流れる導体そのものが動いている場合には、導体そのものについては、Lagrange表現を用いることとすると、時間の推移とともに変化する宇宙の分割$\{V(t)_p\}$があって、ボリューム間での物質全体の流出入はないが、電荷の龍出入はあり、
+\begin{equation}
+    \label{eq:electric_current_state}
+    \bigotimes_p \ket{\rho_p(t),P_p(t),\rho^e_p(t),\bm{J}_p(t)} \in \bigotimes_p \mathcal{H}_p^a
+\end{equation}
+とかけるとする。脳細胞について考察するには、この表現が最も適していると考えられるため、この表現を今後基本的に用いる。
