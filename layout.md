@@ -15,3 +15,4 @@
 3250_EulerFluidDynamics.tex
 3260_ElectricCurrent.tex
 4000_Superposition.tex
+4100_SPMaterialPoint.tex
