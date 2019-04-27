@@ -1,0 +1,46 @@
+\subsection{離散的な重ね合わせの状態になった質点の運動}
+時刻$0$において、位置 $n \in \{p\}$にのみ、質量$M$、速度$\bm{V}$で飛行している質点がある状況を考えよう。その状態は
+\begin{equation}
+    \label{initial_material_point_state}
+    \ket{0}_1 \otimes \ket{0}_2 \otimes \ldots \otimes \ket{M,\bm{V}}_n \otimes \ket{0}_{n+1} \ldots \in \bigotimes_p \mathcal{H}_p^a
+\end{equation}
+とかける。ここで、$\ket{0}$は真空の状態であり、$\ket{M,\bm{V}}$は質量$M$、速度$\mathbf{V}$で特定される状態である。\par
+質点以外に$\ket{\phi} \in \mathcal{H}^i$が存在し、全体では状態は
+\begin{equation}
+    \ket{0}_1 \otimes \ket{0}_2 \otimes \ldots \otimes \ket{M,\bm{V}}_n \otimes \ket{0}_{n+1} \ldots \otimes \ket{\phi} 
+\end{equation}
+とする。$\ket{\phi}$との相互作用により、時刻$dt$において、\eqref{initial_material_point_state}は、
+\begin{equation}
+\begin{aligned}
+    \ket{0}_{\{V(dt)_p\},1} & \otimes \ket{0}_{\{V(dt)_p\},2} \otimes \ldots \\ 
+    & \otimes (\alpha \ket{M,\bm{V}+d\bm{V}_1}_{\{V(dt)_p\},n} + \beta \ket{M,\bm{V}+d\bm{V}_2}_{\{V(dt)_p\},n}) \\
+    & \qquad \otimes \ket{0}_{\{V(dt)_p\},n+1} \ldots 
+\end{aligned}
+\end{equation}
+になるとする。ただし、Lagrange表現を用いており、時刻により異なる宇宙の分割$\{V(t)_p\}$を用いてヒルベルト空間を分割していることを明示するように記法を変更している。また、$\alpha,\beta$は$|\alpha|^2+|\beta|^2=1$を満たす複素数である。時刻$t>dt$では$\ket{\phi}$との相互作用はなくなると仮定すると、2つの状態 
+\begin{equation}
+\begin{aligned}
+    & \ket{0}_{\{V(dt)_p\},1}  \otimes \ket{0}_{\{V(dt)_p\},2} \otimes \ldots \\ 
+    & \qquad \otimes (\ket{M,\bm{V}+d\bm{V}_1}_{\{V(dt)_p\},n} \\
+    & \qquad \qquad \otimes \ket{0}_{\{V(dt)_p\},n+1} \ldots ,
+\end{aligned}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+    &\ket{0}_{\{V(dt)_p\},1}  \otimes \ket{0}_{\{V(dt)_p\},2} \otimes \ldots \\ 
+    & \qquad \otimes (\ket{M,\bm{V}+d\bm{V}_2}_{\{V(dt)_p\},n} \\
+    & \qquad \qquad \otimes \ket{0}_{\{V(dt)_p\},n+1} \ldots 
+\end{aligned}
+\end{equation}
+中の質点は等速運動をすると考えられ、新解釈では重ね合わせの状態になることはないので、任意の時刻$t>dt$における状態は、
+\begin{equation}
+\begin{aligned}
+    &\alpha \ket{0}_{\{V_1(t)_p\},1}  \otimes \ket{0}_{\{V_1(t)_p\},2} \otimes \ldots \\ 
+    & \qquad \otimes (\ket{M,\bm{V}+d\bm{V}_1}_{\{V_1(t)_p\},n} \\
+    & \qquad \qquad \otimes \ket{0}_{\{V_1(t)_p\},n+1} \ldots \otimes \ket{\phi'} \\ 
+    & + \beta \ket{0}_{\{V_2(t)_p\},1}  \otimes \ket{0}_{\{V_2(t)_p\},2} \otimes \ldots \\ 
+    & \qquad \otimes (\ket{M,\bm{V}+d\bm{V}_2}_{\{V_2(t)_p\},n} \\
+    & \qquad \qquad \otimes \ket{0}_{\{V_2(t)_p\},n+1} \ldots \otimes \ket{\phi'} 
+\end{aligned}
+\end{equation}
+となる。このように、時刻により異なる宇宙の分割$\{V(t)_p\}$を用いるだけでなく、$\{V_1(t)_p\}$と$\{V_2(t)_p\}$という異なる宇宙のボリュームへの分割を用いて表現した状態の重ね合わせ状態を考える(フォーミュレーションを行う)ことが、新解釈の一つのポイントとである（無矛盾に数学として定義できるかどうかまでは私には考察できないが）。
