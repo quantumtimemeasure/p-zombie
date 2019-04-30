@@ -1,0 +1,27 @@
+\subsection{異なる宇宙のボリュームへの分割の重ね合わせについて}
+$\{V_1(t)_p\}$と$\{V_2(t)_p\}$という異なる宇宙のボリュームへの分割を用いて表現した状態の重ね合わせ状態を考えることは奇異に感じられるが（異なる分割ではなく、単一の分割でも奇異に感じられるかもしれないが）、これは、場の量子論を正準量子化やフォック空間として捉えるのではなく、場の波動関数として捉えれば、それほど奇異に感じられなくなると思われる。\par
+ここでは、簡単にスカラー場の場合のみを考えよう。そうすると、まず場$\phi$は、空間の点$x \in \mathbb{R}^3$から実数$\mathbb{R}$への写像$\mathbb{R}^3 \to \mathbb{R}$、すなわち、
+\begin{equation}
+    \phi : \mathbb{R}^3 \ni x \mapsto \phi (x) \in \mathbb{R}
+\end{equation}
+である。とりあえず自乗可積分の場合のみを考えることにして、$\phi \in L^2(\mathbb{R}^3)$としよう。次に、状態$\ket{\Psi}$は、写像$\phi$から複素振幅$\mathbb{C}$への写像（汎関数）、すなわち、
+\begin{equation}
+    \label{eq:taotal_universe}
+    \ket{\Psi} :  L^2(\mathbb{R}^3) \ni \phi \mapsto \Psi (\phi) \in \mathbb{C}
+\end{equation}
+である。\par
+ボリューム$V_p$の状態とは、ボリューム$V_p$に含まれる点の集合を同じ記号$V_p=\{x \in \mathbb{R}^3 | x \mathrm{\, is\, in\, the\, }V_p\}$で表すことにし、$V_p$上の実数値関数で積分可能なものの全体を$F(V_p)$で表すことにしたとき、写像$\Psi_p : F(V_p) \to \mathbb{C}$である。繰り返しになるが、
+\begin{equation}
+    \ket{\Psi_p}_{V_p} :  F(V_p) \ni \varphi_p \mapsto \Psi_p (\varphi_p) \in \mathbb{C}
+\end{equation}
+ということである。\par
+宇宙を埋め尽くす空間において、$\Psi_p$が定義されていれば、そこから、\eqref{eq:taotal_universe}の$\Psi$を求めることができる。まず、$\varphi_p$を
+\begin{equation}
+     \varphi_p(x) = \phi(x),\; x \in V_p \subset \mathbb{R}^3
+\end{equation}
+と定義し、
+\begin{equation}
+    \Psi (\phi) = \prod_p \Psi_p(\varphi_p)
+\end{equation}
+とすれば$\Psi (\phi)$が求まるからである。\par
+このように、宇宙の分割の方法によらず、宇宙の状態は、$(L^2) = \{\Psi : L^2 \to \mathbb{C}\}$の元として表すことができる。$(L^2)$の元の和は、$(L^2)$に含まれるので、$\{V_1(t)_p\}$と$\{V_2(t)_p\}$という異なる宇宙のボリュームへの分割を用いて表現した状態の重ね合わせ状態も$(L^2)$に含まれる。
