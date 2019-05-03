@@ -7,8 +7,22 @@
 であったとする。位置$n$から速度$\bm{V_1}$で進むと、時刻$T$において、位置$m$に到達するとしよう。古典力学が教えるように、同一の質量の質点が衝突すると、動いていた方は停止し、静止していた方の質点は動いていた方の速度で動く。
 Euler表現で記載するとこれは、
 \begin{align}
+    \label{eq:super_position_1}
     \ket{0}_1 & \otimes \ket{0}_2 \otimes \ldots \otimes \ket{M,\bm{V_1}}_{n_1(t)} \otimes \ket{0}_{n_1(t)+1} \ldots \otimes \ket{M,\bm{0}}_m \otimes \ket{0}_{m+1} \ldots \\
     &=e^{-iHt}\ket{0}_1 \otimes \ket{0}_2 \otimes \ldots \otimes \ket{M,\bm{V_1}}_n \otimes \ket{0}_{n+1} \ldots \otimes \ket{M,\bm{0}}_m \otimes \ket{0}_{m+1} \ldots \nonumber
 \end{align}
 ということである。ただし、ここで、$n_1(t)$は、位置$n$から速度$\bm{V_1}$で進んだ際の時刻$t$における位置である。\par
-当然であるが、$\bm{V_1}$と異なる速度$\bm{V_2}$で進んでも位置$m$に到達することはない。
+当然であるが、$\bm{V_1}$と異なる速度$\bm{V_2}$で進んでも位置$m$に到達することはない。従って、等速度で移動を続けることになり、
+\begin{align}
+    \label{eq:super_position_2}
+    \ket{0}_1 & \otimes \ket{0}_2 \otimes \ldots \otimes \ket{M,\bm{V_2}}_{n_2(t)} \otimes \ket{0}_{n_2(t)+1} \ldots \otimes \ket{M,\bm{0}}_m \otimes \ket{0}_{m+1} \ldots \\
+    &=e^{-iHt}\ket{0}_1 \otimes \ket{0}_2 \otimes \ldots \otimes \ket{M,\bm{V_1}}_n \otimes \ket{0}_{n+1} \ldots \otimes \ket{M,\bm{0}}_m \otimes \ket{0}_{m+1} \ldots \nonumber
+\end{align}
+が成り立つ。\par
+\eqref{eq:super_position_1}を$\alpha$倍し、\eqref{eq:super_position_2}を$\beta$倍し、足し合わせると、
+\begin{align}
+    \ket{0}_1 & \ldots \otimes \alpha \ket{M,\bm{V_1}}_{n_1(t)} \ldots \otimes \ket{0}_{n_2(t)}  \ldots \otimes \ket{M,\bm{0}}_m \otimes\ldots \\
+    & \quad + \ket{0}_1 \ldots \otimes \ket{0}_{n_1(t)} \ldots \otimes \beta \ket{M,\bm{V_2}}_{n_2(t)}  \ldots \otimes \ket{M,\bm{0}}_m \otimes \ldots \nonumber \\
+    &=e^{-iHt}\ket{0}_1 \ldots \otimes \alpha \ket{M,\bm{V_1}}_n + \beta \ket{M,\bm{V_2}}_n \ldots \otimes \ket{M,\bm{0}}_m \otimes \ldots \nonumber
+\end{align}
+となる。
