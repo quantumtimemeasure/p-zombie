@@ -21,8 +21,17 @@ Euler表現で記載するとこれは、
 が成り立つ。\par
 \eqref{eq:super_position_1}を$\alpha$倍し、\eqref{eq:super_position_2}を$\beta$倍し、足し合わせると、
 \begin{align}
+    \label{eq:super_position_12}
     \ket{0}_1 & \ldots \otimes \alpha \ket{M,\bm{V_1}}_{n_1(t)} \ldots \otimes \ket{0}_{n_2(t)}  \ldots \otimes \ket{M,\bm{0}}_m \otimes\ldots \\
     & \quad + \ket{0}_1 \ldots \otimes \ket{0}_{n_1(t)} \ldots \otimes \beta \ket{M,\bm{V_2}}_{n_2(t)}  \ldots \otimes \ket{M,\bm{0}}_m \otimes \ldots \nonumber \\
     &=e^{-iHt}\ket{0}_1 \ldots \otimes \alpha \ket{M,\bm{V_1}}_n + \beta \ket{M,\bm{V_2}}_n \ldots \otimes \ket{M,\bm{0}}_m \otimes \ldots \nonumber
 \end{align}
-となる。
+となる。\eqref{eq:super_position_12}の左辺を単純化して記載すると、
+\begin{equation}
+    \alpha \ket{M}_{n_1} \otimes \ket{0}_{n_2} + \beta \ket{0}_{n_1} \otimes \ket{M}_{n_2}
+\end{equation}
+という形をしており、これは、電子のスピンのエンタングル状態、すなわち、
+\begin{equation}
+    \alpha \ket{\uparrow} \otimes \ket{\downarrow} + \beta \ket{\downarrow} \otimes \ket{\uparrow}
+\end{equation}
+等と同様になっていることがわかる。マクロ・古典的な物理量の重ね合わせ状態は、時間の経過とともに、相互作用によりエンタングル状態となるのである。
