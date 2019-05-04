@@ -21,7 +21,22 @@ $\{V_1(t)_p\}$と$\{V_2(t)_p\}$という異なる宇宙のボリュームへの�
 \end{equation}
 と定義し、
 \begin{equation}
+    \label{eq:universe_wavefunction}
     \Psi (\phi) = \prod_p \Psi_p(\varphi_p)
 \end{equation}
 とすれば$\Psi (\phi)$が求まるからである。\par
-このように、宇宙の分割の方法によらず、宇宙の状態は、$(L^2) = \{\Psi : L^2 \to \mathbb{C}\}$の元として表すことができる。$(L^2)$の元の和は、$(L^2)$に含まれるので、$\{V_1(t)_p\}$と$\{V_2(t)_p\}$という異なる宇宙のボリュームへの分割を用いて表現した状態の重ね合わせ状態も$(L^2)$に含まれる。
+このように、宇宙の分割の方法によらず、宇宙の状態は、$(L^2) = \{\Psi : L^2 \to \mathbb{C}\}$の元として表すことができる。$(L^2)$の元の和は、$(L^2)$に含まれるので、$\{V_1(t)_p\}$と$\{V_2(t)_p\}$という異なる宇宙のボリュームへの分割を用いて表現した状態の重ね合わせ状態も$(L^2)$に含まれる。\par
+また、このことから、Euler表示とLagrange表示は相互に変換可能なことがわかるだろう。例えば、Euler表示の$\{\Psi_p\}$から\eqref{eq:universe_wavefunction}により$\Psi$を求め、今度はLagrange表示の宇宙の分解で、\eqref{eq:universe_wavefunction}を満たす$\{\Psi'_p\}$を見つければ、それがLagrange表示の状態になっていると考えられるからである。ただし、このLagrage表示は、表示としては一意には定まらないことにも留意が必要である。例えば、$\Psi'_p$を$\alpha$倍して、$\Psi'_q$を$\alpha^{-1}$倍しても$\Psi$は変わらない。しかしこれは、量子力学において一般的にエンタングル状態の表示方法は一意に定まらないのと同じことであり、同じ状態を様々に表示できるということである。簡単に電子のスピンの状態で記載すると、
+\begin{equation}
+    \ket{\uparrow}=\frac{1}{\sqrt{2}}\ket{\leftarrow}+\frac{i}{\sqrt{2}}\ket{\rightarrow},
+\end{equation}
+\begin{equation}
+    \ket{\downarrow}=\frac{1}{\sqrt{2}}\ket{\leftarrow}-\frac{i}{\sqrt{2}}\ket{\rightarrow}
+\end{equation}
+とすると、
+\begin{equation}
+    \frac{1}{\sqrt{2}}\ket{\uparrow} \otimes \ket{\downarrow} + \frac{1}{\sqrt{2}}\ket{\downarrow} \otimes \ket{\uparrow}
+    = 
+    \frac{1}{\sqrt{2}}\ket{\leftarrow} \otimes \ket{\rightarrow} + \frac{1}{\sqrt{2}}\ket{\rightarrow} \otimes \ket{\leftarrow}
+\end{equation}
+である。このように、表示方法には任意性がある。新解釈では、古典・マクロな物理量に関しては、この表示の任意性はないと考える。
