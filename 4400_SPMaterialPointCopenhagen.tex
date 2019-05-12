@@ -1,26 +1,26 @@
 \subsection{離散的な重ね合わせの状態のコペンハーゲン解釈}
 本稿は、コペンハーゲン解釈にはたたないが、実験結果においては、コペンハーゲン解釈は正しい予想を行うことができるとしている。コペンハーゲン解釈のもとで、\eqref{eq:super_position_12}に示される時刻$t$の状況で、質点の測定を行ったら、どのようになるだろうか。$n_1(t)$の位置を含み、$n_2(t)$も$m$も含まない範囲で質点を観測したら、その場合は、質点はあるか否かのいずれかであり、確定的に予想することはできない。質点がある結果を得た場合は、状態は
 \begin{equation}
-    \ket{0}_1 \ldots \otimes \ket{M,\bm{V_1}}_{n_1(t)} \ldots \otimes \ket{0}_{n_2(t)}  \ldots \otimes \ket{M,\bm{0}}_m \otimes\ldots 
+    \ket{0}_1 \ldots \otimes \ket{M,\bm{V}_1}_{n_1(t)} \ldots \otimes \ket{0}_{n_2(t)}  \ldots \otimes \ket{M,\bm{0}}_m \otimes\ldots 
 \end{equation}
 に収束し、質点がない結果を得た場合は
 \begin{equation}
-    \ket{0}_1 \ldots \otimes \ket{0}_{n_1(t)} \ldots \otimes \ket{M,\bm{V_2}}_{n_2(t)}  \ldots \otimes \ket{M,\bm{0}}_m \otimes \ldots \nonumber
+    \ket{0}_1 \ldots \otimes \ket{0}_{n_1(t)} \ldots \otimes \ket{M,\bm{V}_2}_{n_2(t)}  \ldots \otimes \ket{M,\bm{0}}_m \otimes \ldots \nonumber
 \end{equation}
 に状態は収束する。スピンの向きがエンタングルしている電子のペアの片方の電子のスピンの向きが測定で決定されれば、\eqref{eq:electron_spin_entangle}の状態が$\ket{\uparrow} \otimes \ket{\downarrow}$や$\ket{\downarrow} \otimes \ket{\uparrow}$に収束するように、マクロな質点の存在も、収束する（射影される）。\par
 衝突する2つの質点の質量が異なる場合には、衝突前に片方の質点が停止していたとしても、衝突後は両方の質点が移動している。質量$M$と質量$M'$の質点が衝突したとすると、\eqref{eq:super_position_12}は、以下のように変わるだろう。
 \begin{align}
     \label{eq:super_position_12_diffrent_mass}
-    \ket{0}_1 & \ldots \otimes \alpha \ket{M,\bm{V_1'}}_{n'_1(t)} \ldots \otimes \ket{0}_{n_2(t)}  \ldots \otimes \ket{0}_m \ldots \otimes \ket{M',\bm{V}}_{m(t)} \otimes\ldots \\
-    & \quad + \ket{0}_1 \ldots \otimes \ket{0}_{n'_1(t)} \ldots \otimes \beta \ket{M,\bm{V_2}}_{n_2(t)}  \ldots \otimes \ket{M',\bm{0}}_m \ldots \otimes \ket{0}_{m(t)} \otimes \ldots \nonumber \\
-    &=e^{-iHt}\ket{0}_1 \ldots \otimes \alpha \ket{M,\bm{V_1}}_n + \beta \ket{M,\bm{V_2}}_n \ldots \otimes \ket{M',\bm{0}}_m \otimes \ldots .\nonumber
+    \ket{0}_1 & \ldots \otimes \alpha \ket{M,\bm{V}_1'}_{n'_1(t)} \ldots \otimes \ket{0}_{n_2(t)}  \ldots \otimes \ket{0}_m \ldots \otimes \ket{M',\bm{V}}_{m(t)} \otimes\ldots \\
+    & \quad + \ket{0}_1 \ldots \otimes \ket{0}_{n'_1(t)} \ldots \otimes \beta \ket{M,\bm{V}_2}_{n_2(t)}  \ldots \otimes \ket{M',\bm{0}}_m \ldots \otimes \ket{0}_{m(t)} \otimes \ldots \nonumber \\
+    &=e^{-iHt}\ket{0}_1 \ldots \otimes \alpha \ket{M,\bm{V}_1}_n + \beta \ket{M,\bm{V}_2}_n \ldots \otimes \ket{M',\bm{0}}_m \otimes \ldots .\nonumber
 \end{align}
 この状態を$n'_1(t)$の位置を含み、$n_2(t)$も$m$も$m(t)$も含まない範囲で質点を観測すれば、
 \begin{equation}
-    \ket{0}_1 \ldots \otimes \ket{M,\bm{V_1'}}_{n'_1(t)} \ldots \otimes \ket{0}_{n_2(t)}  \ldots \otimes \ket{0}_m \ldots \otimes \ket{M',\bm{V}}_{m(t)} \otimes\ldots
+    \ket{0}_1 \ldots \otimes \ket{M,\bm{V}_1'}_{n'_1(t)} \ldots \otimes \ket{0}_{n_2(t)}  \ldots \otimes \ket{0}_m \ldots \otimes \ket{M',\bm{V}}_{m(t)} \otimes\ldots
 \end{equation}
 か
 \begin{equation}
-    \ket{0}_1 \ldots \otimes \ket{0}_{n'_1(t)} \ldots \otimes \ket{M,\bm{V_2}}_{n_2(t)}  \ldots \otimes \ket{M',\bm{0}}_m \ldots \otimes \ket{0}_{m(t)} \otimes \ldots 
+    \ket{0}_1 \ldots \otimes \ket{0}_{n'_1(t)} \ldots \otimes \ket{M,\bm{V}_2}_{n_2(t)}  \ldots \otimes \ket{M',\bm{0}}_m \ldots \otimes \ket{0}_{m(t)} \otimes \ldots 
 \end{equation}
 に収束する（射影される）。観測していない方の質点の位置も収束し、異なる位置の重ね合わせ状態ではなく、確定した位置になっている。いずれの状態になっても、古典力学とは矛盾しない状態になっている。単純な例で示したのみであるが、マクロな質点が重なり合いの状態になったとしても、量子力学とも古典力学とも矛盾しないことがわかるだろう。マクロな状態の重ね合わせは、人間の直感には反するが、そうだとしても、量子力学(射影仮説を含む)が正しいとすると（加えて、新解釈で仮定している「$H^i$を除いたハミルトニアンによる時間発展のもとでは、マクロ・古典的な自由度（物理変数）の固有状態は、当該物理変数の固有状態であり続け、重ね合わせの状態にならない」が成り立てば）、特に矛盾が生じたりはしないのである。繰り返しになるが、これは、スピンの向きがエンタングルしている電子のペアの片方の電子のスピンの向きが測定で決定されれば、\eqref{eq:electron_spin_entangle}の状態が$\ket{\uparrow} \otimes \ket{\downarrow}$や$\ket{\downarrow} \otimes \ket{\uparrow}$に収束し、遥かに離れたもう一方の電子のスピンの向きも確定するのと同じである。
