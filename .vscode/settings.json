@@ -70,7 +70,7 @@
     "*.fls",
     "*.log",
     "*.fdb_latexmk",
-    "*.synctex.gz",
+    //"*.synctex.gz",
     // for Beamer files
     "_minted*",
     "*.nav",
