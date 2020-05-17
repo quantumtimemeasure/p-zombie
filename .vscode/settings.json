@@ -8,7 +8,7 @@
       "args": [
         "-f",
         "-gg",
-        "-pv",
+        //"-pv",
         "-xelatex",
         "-synctex=1",
         "-interaction=nonstopmode",
@@ -33,7 +33,7 @@
   "latex-workshop.latex.magic.args": [
     "-f",
     "-gg",
-    "-pv",
+    //"-pv",
     "-synctex=1",
     "-interaction=nonstopmode",
     "-file-line-error",
@@ -81,5 +81,4 @@
   ],
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.latex.autoClean.run": "onBuilt",
-  "latex-workshop.view.pdf.ref.viewer": "tabOrBrowser",
 }
