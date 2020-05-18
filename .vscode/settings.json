@@ -81,4 +81,5 @@
   ],
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.message.latexlog.exclude":["(Font shape `(JY1|JT1|JY2|JT2|TU)(/.*)(sl|it|sc)'.*|Some font shapes were not available.*)"],
 }
