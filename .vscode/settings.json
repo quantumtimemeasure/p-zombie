@@ -78,8 +78,11 @@
     "*.vrb",
     // for biber
     "*.bcf",
+    "*.run.xml"
   ],
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.latex.autoClean.run": "onBuilt",
+  //コンパイルしたときに，tex 文書のカーソル位置で PDF を表示する
+  "latex-workshop.synctex.afterBuild.enabled": true,
   "latex-workshop.message.latexlog.exclude":["(Font shape `(JY1|JT1|JY2|JT2|TU)(/.*)(sl|it|sc)'.*|Some font shapes were not available.*)"],
 }
